@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<style>
+    .container {
+        position: center;
+        margin: 0 auto;
+        background: #b5d5dd;
+        width: 300px;
+        height: 300px;
+        border-radius: 19px;
+        box-shadow: 3px 3px 10px #333;
+        padding: 15px;
+
+
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 3em;
+        font-weight: 300;
+        color: rgba(88, 72, 146, 0.7);
+        display: inline-block;
+        padding-bottom: 5px;
+        text-shadow: 1px 1px 3px #b5b1d3;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    form {
+
+        border-bottom: 1px solid rgba(190, 20, 20, 0.1);
+        border-top: 1px solid rgba(114, 11, 11, 0.1);
+        border-top: none;
+        background: transparent;
+        min-width: 53px;
+        border: none;
+
+        font-size: 1.5em;
+        color: rgba(114, 11, 11, 0.1);
+
+
+    }
+
+    button {
+        margin-top: 20px;
+        position: center;
+        background: #27AE60;
+        border: none;
+        font-size: 1.1em;
+        font-weight: 300;
+        padding: 5px 0;
+        width: 70%;
+        height: 40px;
+        border-radius: 5px;
+        color: lighten(#27AE60, 40%);
+        border-bottom: 4px solid darken(#27AE60, 10%);
+        background: tint(#27AE60, 4%);
+        -webkit-animation: hop 1s;
+        animation: hop 1s;
+
+    }
+
+    input {
+        position: center;
+        padding: 10px;
+        font-size: 0.8em;
+        width: 60%;
+        height: 30px;
+        background: transparent;
+        color: lighten(rgb(235, 231, 228), 10%);
+    }
+
+    body,
+    input,
+    button {
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+
+
+
+
+    .float {
+        display: inline-block;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    }
+
+    .float:hover,
+    .float:focus,
+    .float:active {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+</style>
+
+<head>
+
+    <title>Sign in</title>
+    <br>
+    <br>
+    <br>
+</head>
+
+<body background="fondo1.jpg" )>
+    <div class="container my-5 text-center">
+        <center>
+            <h2>Sign in</h2>
+            <form method="post" action="buscar.php">
+                <input type="text" name="user" placeholder="Username ">
+                <br>
+                <input type="password" name="password" placeholder="Password">
+                <br>
+                <button type="submit" class="float">Login</button>
+            </form>
+        </center>
+    </div>
+    </div>
+</body>
+
+</html>
